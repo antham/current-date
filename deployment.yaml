@@ -6,3 +6,4 @@ spec:
   containers:
     - image: antham/current-date
       name: current-date
+  restartPolicy: Never
