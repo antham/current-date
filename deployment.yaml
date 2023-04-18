@@ -1,0 +1,8 @@
+apiVersion: apps/v1
+kind: Pod
+metadata:
+  name: current-date
+spec:
+  containers:
+    - image: antham/current-date
+      name: current-date
