@@ -1,4 +1,6 @@
-FROM bash
+FROM alpine
+
+RUN apk add curl
 
 WORKDIR /app
 COPY script.sh .
