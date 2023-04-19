@@ -2,6 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: current-date
+  date: mer. 19 avril 2023 10:41:56 CEST
 spec:
   template:
     spec:
