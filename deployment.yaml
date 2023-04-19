@@ -4,7 +4,8 @@ metadata:
   name: current-date
 spec:
   template:
-    containers:
-      - image: antham/current-date
-        name: current-date
-    restartPolicy: Never
+    spec:
+      containers:
+        - image: antham/current-date
+          name: current-date
+      restartPolicy: Never
