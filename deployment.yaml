@@ -1,9 +1,10 @@
-apiVersion: v1
-kind: Pod
+apiVersion: batch/v1
+kind: Job
 metadata:
   name: current-date
 spec:
-  containers:
-    - image: antham/current-date
-      name: current-date
-  restartPolicy: Never
+  template:
+    containers:
+      - image: antham/current-date
+        name: current-date
+    restartPolicy: Never
